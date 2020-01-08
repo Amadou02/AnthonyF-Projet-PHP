@@ -28,7 +28,7 @@ if (isset($_GET) && !empty($_GET)) {
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <?php
                     // Création de chaque lien dans la navbar selon l'id de la page et le titre du menu
