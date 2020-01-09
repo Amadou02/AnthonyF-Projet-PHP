@@ -1,0 +1,33 @@
+h1{
+   text-align: center;
+   background-color: #343A40;
+   color: darkorange;
+   padding: 2%;
+   margin-bottom: 5%;
+   border-color: darkorange;
+   border-style: solid;
+}
+h2{
+   text-align: center;
+   background-color: #343A40;
+   color: white;
+   padding: 2%;
+   margin-bottom: 5%;
+   border-color: darkorange;
+   border-style: solid;
+}
+.gallery_box_single{
+   display: flex;
+   flex-wrap: wrap;
+
+}
+.img{
+   padding: 1%;
+}
+.foo{
+   text-align: justify;
+   font-weight: normal;
+   font-size: 2vh;
+   padding: 1%;
+   margin: 1%;
+}
