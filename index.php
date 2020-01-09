@@ -5,7 +5,7 @@ if (file_exists('source.xml')) {
 } else {
     exit('Erreur lors du chargement du fichier xml');
 }
-//Initialisation des variables id et 
+//Initialisation des variables id et
 $idPage = '';
 $pageTitle = '';
 //
