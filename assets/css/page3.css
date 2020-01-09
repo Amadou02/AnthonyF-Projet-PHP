@@ -1,8 +1,3 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
 h1{
     text-align: center;
     background-color: #343A40;
@@ -19,7 +14,7 @@ h1{
     justify-content: space-between;
 }
 .quote{
-width:45%
+    width:45%
 }
 h2{
     text-align: center;
@@ -35,6 +30,7 @@ h2{
     padding: 1%;
     margin: 1%;
 }
+<<<<<<< HEAD
 #headerimage{
     width: 50%;
     height: 40%;
@@ -48,3 +44,18 @@ h2{
     Author     : lb
 */
 
+=======
+@media screen and (max-width: 600px)
+{
+    .testimonials-list
+    {
+        display: inline-block;
+        margin-left: 8vw;
+    }
+    .quote
+    {
+        width: 100%;
+        
+    }
+}
+>>>>>>> LB
