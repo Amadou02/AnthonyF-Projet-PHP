@@ -29,3 +29,11 @@ p{
     padding: 1%;
     margin: 1%;
 }
+#headerimage{
+    width: 50%;
+    height: 40%;
+    margin-left: 15%;
+}
+#logo{
+    width: 10%;
+}

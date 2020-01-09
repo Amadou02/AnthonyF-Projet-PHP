@@ -23,18 +23,23 @@ if (isset($_GET) && !empty($_GET)) {
         <title><?= $pages->page[$idPage - 1]->title ?></title>
     </head>
     <body>
+    <header>
+        <div class="container m-auto">
+            <img src="assets/img/Logo-Ocordo-Travaux-Amiens.png" alt="logo ocordo maçonnerie" id="logo" href="">
+            <img src="assets/img/headerimg.jpg" alt="illustrations rénovation de maison" id="headerimage">
+        </div>
+    </header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-center">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav m-auto" id="nav">
                     <?php
                     // Création de chaque lien dans la navbar selon l'id de la page et le titre du menu
                     foreach ($pages as $page => $pageMenu) {
                         ?>
-                        <li class="nav-item active">
+                        <li class="nav-item active mr-5" id="navlinks">
                             <a class="nav-link" href="<?= $pageMenu['id'] ?>.html"><?= $pageMenu->menu ?></a>
                         </li>
                     <?php } ?>

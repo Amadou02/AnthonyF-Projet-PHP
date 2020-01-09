@@ -31,3 +31,16 @@ h2{
    padding: 1%;
    margin: 1%;
 }
+#nav{
+   display: flex;
+   justify-content: space-between;
+}
+
+#headerimage{
+   width: 50%;
+   height: 40%;
+   margin-left: 15%;
+}
+#logo{
+   width: 10%;
+}

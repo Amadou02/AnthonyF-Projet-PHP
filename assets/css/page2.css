@@ -25,16 +25,12 @@ h3{
     border-style: solid;
 }
 
-iframe{
+iframe {
     margin-left: 25%;
     margin-top: 5%;
     width: 40%;
-
-ul{
-    width: 30%;
-    height: auto;
-    margin-left: 5%;
 }
+
 p{
     text-align: justify;
 
@@ -45,6 +41,14 @@ p{
     font-size: 2vh;
     padding: 1%;
     margin: 1%;
+}
+#headerimage{
+    width: 50%;
+    height: 40%;
+    margin-left: 15%;
+}
+#logo{
+    width: 10%;
 }
 /* 
     Created on : 9 janv. 2020, 12:22:16
