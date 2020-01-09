@@ -23,18 +23,23 @@ if (isset($_GET) && !empty($_GET)) {
         <title><?= $pages->page[$idPage - 1]->title ?></title>
     </head>
     <body>
+    <header>
+        <div class="container m-auto">
+            <img src="assets/img/Logo-Ocordo-Travaux-Amiens.png" alt="logo ocordo maçonnerie" id="logo" href="">
+            <img src="assets/img/headerimg.jpg" alt="illustrations rénovation de maison" id="headerimage">
+        </div>
+    </header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-center">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav m-auto" id="nav">
                     <?php
                     // Création de chaque lien dans la navbar selon l'id de la page et le titre du menu
                     foreach ($pages as $page => $pageMenu) {
                         ?>
-                        <li class="nav-item active">
+                        <li class="nav-item active mr-5" id="navlinks">
                             <a class="nav-link" href="<?= $pageMenu['id'] ?>.html"><?= $pageMenu->menu ?></a>
                         </li>
                     <?php } ?>
@@ -49,16 +54,16 @@ if (isset($_GET) && !empty($_GET)) {
         <div class="container-full bg-dark">
             <div class="row text-light">
                 <div class="col-md-6 border-right border-light">
-                    <h3>A Propos</h3>
-                    <p>Entreprises de travaux de gros oeuvre et travaux de second oeuvre, Ocordo Travaux Amiens est une agence de travaux spécialisée dans l’externalisation du service commercial d’entreprises locales du bâtiment d'Amiens spécialisées dans les travaux de rénovation et de construction d’extensions. Nous avons l’expérience de plus de 3.000 projets de rénovations de maisons, rénovations d’appartements et de constructions d’extensions de maisons.</p>                   
+                    <h4>A Propos</h4>
+                    <p class="foo">Entreprises de travaux de gros oeuvre et travaux de second oeuvre, Ocordo Travaux Amiens est une agence de travaux spécialisée dans l’externalisation du service commercial d’entreprises locales du bâtiment d'Amiens spécialisées dans les travaux de rénovation et de construction d’extensions. Nous avons l’expérience de plus de 3.000 projets de rénovations de maisons, rénovations d’appartements et de constructions d’extensions de maisons.</p>
                 </div>
                 <div class="col-md-4 ml-2">
-                    <h3>Nous Contacter</h3>
-                    <p>Ocordo Travaux Amiens</p>
-                    <p>31 Rue Alexandre</p>
-                    <p>80000 Amiens</p>
-                    <p>Tel : +33 (0)3 22 72 22 22</p>
-                    <p>Email : contact@ocordo-travaux.fr</p>                   
+                    <h4>Nous Contacter</h4>
+                    <p class="foo">Ocordo Travaux Amiens</p>
+                    <p class="foo">31 Rue Alexandre</p>
+                    <p class="foo">80000 Amiens</p>
+                    <p class="foo">Tel : +33 (0)3 22 72 22 22</p>
+                    <p class="foo">Email : contact@ocordo-travaux.fr</p>
                 </div>
             </div>     
         </div>

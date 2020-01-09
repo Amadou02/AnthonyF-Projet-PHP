@@ -1,8 +1,41 @@
 form
 {
     text-align: center;
+    width: 60%;
+    margin: auto;
 }
 iframe{ 
     width: 100vw;
     height: 20vh;
+}
+h1{
+    text-align: center;
+    background-color: #343A40;
+    color: darkorange;
+    padding: 2%;
+    border-color: darkorange;
+    border-style: solid;
+    margin-bottom: -10%;
+}
+p{
+    text-align: center;
+    margin-top: 5%;
+    padding-top: 10%;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.foo{
+    text-align: justify;
+    font-weight: normal;
+    font-size: 2vh;
+    padding: 1%;
+    margin: 1%;
+}
+#headerimage{
+    width: 50%;
+    height: 40%;
+    margin-left: 15%;
+}
+#logo{
+    width: 10%;
 }

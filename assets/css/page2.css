@@ -3,6 +3,53 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+    background-color: #343A40;
+    color: darkorange;
+    padding: 2%;
+    margin-bottom: 5%;
+    border-color: darkorange;
+    border-style: solid;
+}
+h3{
+    text-align: center;
+    background-color: #343A40;
+    color: white;
+    padding: 2%;
+    margin-bottom: 5%;
+    border-color: darkorange;
+    border-style: solid;
+}
+
+iframe {
+    margin-left: 25%;
+    margin-top: 5%;
+    width: 40%;
+}
+
+p{
+    text-align: justify;
+
+}
+.foo{
+    text-align: justify;
+    font-weight: normal;
+    font-size: 2vh;
+    padding: 1%;
+    margin: 1%;
+}
+#headerimage{
+    width: 50%;
+    height: 40%;
+    margin-left: 15%;
+}
+#logo{
+    width: 10%;
+}
 /* 
     Created on : 9 janv. 2020, 12:22:16
     Author     : lb
