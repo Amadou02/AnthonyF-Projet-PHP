@@ -5,10 +5,10 @@ if (file_exists('source.xml')) {
 } else {
     exit('Erreur lors du chargement du fichier xml');
 }
-//Initialisation des variables id et 
+//Initialisation des variables id et titre page
 $idPage = '';
 $pageTitle = '';
-//
+// Vérification de l'id de la page
 if (isset($_GET) && !empty($_GET)) {
     $idPage = $_GET['id'];
 }
@@ -20,7 +20,7 @@ if (isset($_GET) && !empty($_GET)) {
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/style.css">
-        <title><?= $pages->page[0]->title ?></title>
+        <title><?= $pages->page[$idPage - 1]->title ?></title>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-center">
@@ -35,24 +35,14 @@ if (isset($_GET) && !empty($_GET)) {
                     foreach ($pages as $page => $pageMenu) {
                         ?>
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.php?id=<?= $pageMenu['id'] ?>"><?= $pageMenu->menu ?></a>
+                            <a class="nav-link" href="<?= $pageMenu['id'] ?>.html"><?= $pageMenu->menu ?></a>
                         </li>
                     <?php } ?>
                 </ul>
             </div>
         </nav>
-        <?php
-        // Affichage du contenu selon l'id de la page
-        if ($idPage == '1') {
-            echo $pages->page[0]->content;
-        } elseif ($idPage == '2') {
-            echo $pages->page[1]->content;
-        } elseif ($idPage == '3') {
-            echo $pages->page[2]->content;
-        } elseif ($idPage == '4') {
-            echo $pages->page[3]->content;
-        }
-        ?>
+        <!--Affichage du contenu selon l'id de la page-->
+        <?= $pages->page[$idPage - 1]->content?> 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
