@@ -6,5 +6,5 @@ $(function(){
    $('.img').addClass('carousel-item d-block');
    $('.img img').addClass('w-100');
    $('form').append('<input class="btn btn-dark mt-3" type="submit" value="Envoyer">');
-   
+   $('.form').attr('action', '4.html');   
 });

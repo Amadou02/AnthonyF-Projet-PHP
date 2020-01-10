@@ -12,6 +12,13 @@ $pageTitle = '';
 if (isset($_GET) && !empty($_GET)) {
     $idPage = $_GET['id'];
 }
+//Redirection si on entre index.php dans l'url
+elseif (empty($_GET['id'])) {
+    $idPage = '1';
+    $monUrl = 'http://maconnerieocordo.com/1.html';
+    header($monUrl);
+}
+include 'validation.php';
 ?>
 <!doctype html>
 <html lang="fr">
@@ -20,15 +27,16 @@ if (isset($_GET) && !empty($_GET)) {
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/page<?= $idPage ?>.css">  
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <title><?= $pages->page[$idPage - 1]->title ?></title>
     </head>
     <body>
-    <header>
-        <div class="container m-auto">
-            <img src="assets/img/Logo-Ocordo-Travaux-Amiens.png" alt="logo ocordo maçonnerie" id="logo" href="">
-            <img src="assets/img/headerimg.jpg" alt="illustrations rénovation de maison" id="headerimage">
-        </div>
-    </header>
+        <header>
+            <div class="container m-auto">
+                <img src="assets/img/Logo-Ocordo-Travaux-Amiens.png" alt="logo ocordo maçonnerie" id="logo" href="">
+                <img src="assets/img/headerimg.jpg" alt="illustrations rénovation de maison" id="headerimage">
+            </div>
+        </header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-center">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -46,12 +54,21 @@ if (isset($_GET) && !empty($_GET)) {
                 </ul>
             </div>
         </nav>
-        <div class="jumbotron">
-            <!--Affichage du contenu selon l'id de la page-->
-            <?= $pages->page[$idPage - 1]->content ?>
+        <div class="jumbotron-fluid">
+            <?php
+            //si post du formulaire complété sans erreurs, affichage du résultat
+            if ($isSubmitted && count($errors) == 0 && $idPage == 4) {
+                ?>
+                <p>Vos données ont bien été enregistrées!</p>
+                <?php
+            } else {
+                //Affichage du contenu selon l'id de la page-->
+                echo $pages->page[$idPage - 1]->content;
+            }
+            ?>
         </div>
         <!--Footer-->
-        <div class="container-full bg-dark">
+        <div class="container-fluid bg-dark">
             <div class="row text-light">
                 <div class="col-md-6 border-right border-light">
                     <h4>A Propos</h4>
@@ -63,7 +80,7 @@ if (isset($_GET) && !empty($_GET)) {
                     <p class="foo">31 Rue Alexandre</p>
                     <p class="foo">80000 Amiens</p>
                     <p class="foo">Tel : +33 (0)3 22 72 22 22</p>
-                    <p class="foo">Email : contact@ocordo-travaux.fr</p>
+                    <div class="foo">Email :<a href="mailto:contact@ocordo-travaux.fr" > contact@ocordo-travaux.fr</a></div>
                 </div>
             </div>     
         </div>
