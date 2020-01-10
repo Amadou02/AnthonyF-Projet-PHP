@@ -17,6 +17,9 @@ h2{
    border-color: darkorange;
    border-style: solid;
 }
+p:not(foo){
+   padding-left: 2%;
+}
 .gallery_box_single{
    display: flex;
    flex-wrap: wrap;
@@ -47,4 +50,8 @@ h2{
 }
 body, html{
    overflow-x: hidden;
+}
+#carouselControls{
+   width: 50%;
+   margin: auto;
 }
