@@ -7,7 +7,7 @@ if (file_exists('source.xml')) {
     exit('Erreur lors du chargement du fichier xml');
 }
 //Initialisation des variables id et titre page
-$idPage = '';
+$idPage = '1';
 $pageTitle = '';
 // Vérification de l'id de la page
 if (isset($_GET) && !empty($_GET)) {
@@ -21,7 +21,7 @@ if (isset($_GET) && !empty($_GET)) {
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/page<?= $idPage ?>.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <title><?= $pages->page[$idPage - 1]->title ?></title>
     </head>
     <body>
