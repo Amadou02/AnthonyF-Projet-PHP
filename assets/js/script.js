@@ -16,6 +16,6 @@ $(function(){
    //ajoute les éléments après l'élément ave la classe pour les contrôles sur le carousel 
    $('.gallery_box_single').append('<a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>')
    //ajoute un bouton sur le formulaire
-   $('form').append('<input class="btn btn-dark mt-3" type="submit" value="Envoyer">');
+   $('form').append('<input class="btn btn-outline-dark mt-3 mb-2" type="submit" value="Envoyer">');
    $('.form').attr('action', '4.html');   
 });
