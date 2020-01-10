@@ -7,6 +7,8 @@ form
 iframe{ 
     width: 100vw;
     height: 20vh;
+    border-bottom: solid;
+    border-bottom-color: darkorange;
 }
 h1{
     text-align: center;
@@ -15,9 +17,10 @@ h1{
     padding: 2%;
     border-color: darkorange;
     border-style: solid;
-    margin-bottom: -10%;
+    margin-top: 5%;
+    margin-bottom: -15%;
 }
-p{
+p:not(.foo){
     text-align: center;
     margin-top: 5%;
     padding-top: 10%;
@@ -38,4 +41,26 @@ p{
 }
 #logo{
     width: 10%;
+}
+ul:not(#nav){
+    text-align: center;
+    background-color: #343A40;
+    color: white;
+    margin-top: 0;
+    padding-bottom: 2%;
+    border-left: solid;
+    border-left-color: darkorange;
+    border-right: solid;
+    border-right-color: darkorange;
+    border-bottom: solid;
+    border-bottom-color: darkorange;
+}
+p + p:not(.foo){
+    background-color: #343A40;
+    color: white;
+    margin-bottom: 0;
+    border-left: solid;
+    border-left-color: darkorange;
+    border-right: solid;
+    border-right-color: darkorange;
 }
