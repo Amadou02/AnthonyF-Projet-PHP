@@ -1,5 +1,6 @@
 h1{
     text-align: center;
+    margin: 3%;
 }
 h2{
     text-align: center;
@@ -24,19 +25,17 @@ iframe {
     margin-left: 25%;
     margin-top: 5%;
     width: 40%;
-<<<<<<< HEAD
-=======
 }
-ul{
-    width: 30%;
-    height: auto;
-    margin-left: 5%;
->>>>>>> LB
-}
-
-p{
+p +p +p +p{
     text-align: justify;
+    margin-bottom: 5%;
 
+}
+p:not(.foo){
+    padding-left: 2%;
+}
+ul:not(#nav){
+    margin-bottom: 2%;
 }
 .foo{
     text-align: justify;
@@ -44,7 +43,6 @@ p{
     font-size: 2vh;
     padding: 1%;
     margin: 1%;
-<<<<<<< HEAD
 }
 #headerimage{
     width: 50%;
@@ -54,11 +52,3 @@ p{
 #logo{
     width: 10%;
 }
-/* 
-    Created on : 9 janv. 2020, 12:22:16
-    Author     : lb
-*/
-
-=======
-}
->>>>>>> LB
