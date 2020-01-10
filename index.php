@@ -37,6 +37,7 @@ include 'validation.php';
                 <img src="assets/img/headerimg.jpg" alt="illustrations rénovation de maison" id="headerimage">
             </div>
         </header>
+        <a href="validation.php"></a>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-center">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -50,17 +51,27 @@ include 'validation.php';
                         <li class="nav-item active mr-5" id="navlinks">
                             <a class="nav-link" href="<?= $pageMenu['id'] ?>.html"><?= $pageMenu->menu ?></a>
                         </li>
+                        <a href="validation.php"></a>
+                        <a href="validation.php"></a>
                     <?php } ?>
                 </ul>
             </div>
+            <a href="validation.php"></a>
         </nav>
+        <a href="validation.php"></a>
+        <a href="validation.php"></a>
         <div class="jumbotron-fluid">
             <?php
             //si post du formulaire complété sans erreurs, affichage du résultat
             if ($isSubmitted && count($errors) == 0 && $idPage == 4) {
-                ?>
+            ?>
                 <p>Vos données ont bien été enregistrées!</p>
-                <?php
+            <?php
+            } elseif ($isSubmitted && count($errors) != 0 && $idPage == 4) {
+                echo $pages->page[$idPage - 1]->content;
+            ?>
+                <p class="text-center text-danger">Veuillez saisir correctement tous les champs</p>
+            <?php
             } else {
                 //Affichage du contenu selon l'id de la page-->
                 echo $pages->page[$idPage - 1]->content;
