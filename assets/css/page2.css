@@ -3,6 +3,8 @@ body {
 }
 h1{
     text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 h2{
     text-align: center;
@@ -31,6 +33,13 @@ iframe {
 p{
     text-align: justify;
     font-size: 1.5rem;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+p+p+p+p{
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 .foo{
     text-align: justify;
@@ -47,7 +56,8 @@ p{
 #logo{
     width: 10%;
 }
-p
-{
-    font-size: 1.5rem;
+ul{
+    text-align: center;
+    font-size: 1,5rem;
+    color: #343A40;
 }

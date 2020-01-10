@@ -58,7 +58,7 @@ if (isset($_GET) && !empty($_GET)) {
             } elseif ($isSubmitted && count($errors) != 0 && $idPage == 4) {
                 echo $pages->page[$idPage - 1]->content;
             ?>
-                <p class="text-center text-danger">Veuillez saisir correctement tous les champs</p>
+                <div><p class="text-center text-danger">Veuillez saisir correctement tous les champs</p></div>
             <?php
             } else {
                 //Affichage du contenu selon l'id de la page-->
@@ -79,7 +79,7 @@ if (isset($_GET) && !empty($_GET)) {
                     <p class="foo">31 Rue Alexandre</p>
                     <p class="foo">80000 Amiens</p>
                     <p class="foo">Tel : +33 (0)3 22 72 22 22</p>
-                    <div class="foo">Email : <a href="mailto:contact@ocordo-travaux.fr">mailto:contact@ocordo-travaux.fr</a>></div>
+                    <div class="foo">Email : <a href="mailto:contact@ocordo-travaux.fr">mailto:contact@ocordo-travaux.fr</a></div>
                 </div>
             </div>
         </div>
