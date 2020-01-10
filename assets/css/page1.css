@@ -45,3 +45,6 @@ h2{
 #logo{
    width: 10%;
 }
+body, html{
+   overflow-x: hidden;
+}

@@ -3,6 +3,7 @@ form
     text-align: center;
     width: 60%;
     margin: auto;
+    margin-bottom: 5%;
 }
 iframe{ 
     width: 100vw;
@@ -63,4 +64,7 @@ p + p:not(.foo){
     border-left-color: darkorange;
     border-right: solid;
     border-right-color: darkorange;
+}
+body, html{
+    overflow-x: hidden;
 }

@@ -52,3 +52,6 @@ ul:not(#nav){
 #logo{
     width: 10%;
 }
+body, html{
+    overflow-x: hidden;
+}

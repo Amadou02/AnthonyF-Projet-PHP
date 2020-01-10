@@ -9,7 +9,7 @@ h1{
     border-style: solid;
 }
 .testimonials-list{
-    width: 100;
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: space-between;
@@ -51,4 +51,7 @@ h2{
         width: 100%;
         
     }
+}
+body, html{
+    overflow-x: hidden;
 }
