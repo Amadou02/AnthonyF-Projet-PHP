@@ -5,6 +5,7 @@ and open the template in the editor.
 */
 h1{
     text-align: center;
+    margin: 3%;
 }
 h2{
     text-align: center;
@@ -31,9 +32,16 @@ iframe {
     width: 40%;
 }
 
-p{
+p +p +p +p{
     text-align: justify;
+    margin-bottom: 5%;
 
+}
+p:not(.foo){
+    padding-left: 2%;
+}
+ul:not(#nav){
+    margin-bottom: 2%;
 }
 .foo{
     text-align: justify;
