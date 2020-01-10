@@ -1,10 +1,12 @@
+body {
+    font-family: "Roboto";
+}
 h1{
    text-align: center;
    background-color: #343A40;
    color: darkorange;
    padding: 2%;
    margin-bottom: 5%;
-   margin-top: 5%;
    border-color: darkorange;
    border-style: solid;
 }
@@ -44,7 +46,4 @@ h2{
 }
 #logo{
    width: 10%;
-}
-body, html{
-   overflow-x: hidden;
 }

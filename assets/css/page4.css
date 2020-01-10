@@ -1,15 +1,15 @@
+body {
+    font-family: "Roboto";
+}
 form
 {
     text-align: center;
     width: 60%;
     margin: auto;
-    margin-bottom: 5%;
 }
-iframe{ 
+iframe{
     width: 100vw;
     height: 20vh;
-    border-bottom: solid;
-    border-bottom-color: darkorange;
 }
 h1{
     text-align: center;
@@ -18,10 +18,9 @@ h1{
     padding: 2%;
     border-color: darkorange;
     border-style: solid;
-    margin-top: 5%;
-    margin-bottom: -15%;
+    margin-bottom: -10%;
 }
-p:not(.foo){
+p{
     text-align: center;
     margin-top: 5%;
     padding-top: 10%;
@@ -35,6 +34,9 @@ p:not(.foo){
     padding: 1%;
     margin: 1%;
 }
+.btn{
+  font-size: 1.8rem;
+}
 #headerimage{
     width: 50%;
     height: 40%;
@@ -42,29 +44,4 @@ p:not(.foo){
 }
 #logo{
     width: 10%;
-}
-ul:not(#nav){
-    text-align: center;
-    background-color: #343A40;
-    color: white;
-    margin-top: 0;
-    padding-bottom: 2%;
-    border-left: solid;
-    border-left-color: darkorange;
-    border-right: solid;
-    border-right-color: darkorange;
-    border-bottom: solid;
-    border-bottom-color: darkorange;
-}
-p + p:not(.foo){
-    background-color: #343A40;
-    color: white;
-    margin-bottom: 0;
-    border-left: solid;
-    border-left-color: darkorange;
-    border-right: solid;
-    border-right-color: darkorange;
-}
-body, html{
-    overflow-x: hidden;
 }

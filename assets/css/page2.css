@@ -1,6 +1,8 @@
+body {
+    font-family: "Roboto";
+}
 h1{
     text-align: center;
-    margin: 3%;
 }
 h2{
     text-align: center;
@@ -25,17 +27,22 @@ iframe {
     margin-left: 25%;
     margin-top: 5%;
     width: 40%;
+<<<<<<< HEAD
+=======
 }
-p +p +p +p{
-    text-align: justify;
-    margin-bottom: 5%;
+ul{
+    width: 30%;
+    height: auto;
+    margin-left: 5%;
+>>>>>>> LB
+}
 
+p{
+    text-align: justify;
+    font-size: 1.2vw;
 }
-p:not(.foo){
-    padding-left: 2%;
-}
-ul:not(#nav){
-    margin-bottom: 2%;
+li {
+    font-size: 1.2vw;
 }
 .foo{
     text-align: justify;
@@ -43,6 +50,7 @@ ul:not(#nav){
     font-size: 2vh;
     padding: 1%;
     margin: 1%;
+<<<<<<< HEAD
 }
 #headerimage{
     width: 50%;
@@ -52,6 +60,11 @@ ul:not(#nav){
 #logo{
     width: 10%;
 }
-body, html{
-    overflow-x: hidden;
+/*
+    Created on : 9 janv. 2020, 12:22:16
+    Author     : lb
+*/
+
+=======
 }
+>>>>>>> LB
