@@ -1,8 +1,4 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
+
 h1{
     text-align: center;
     margin: 3%;
@@ -58,8 +54,7 @@ ul:not(#nav){
 #logo{
     width: 10%;
 }
-/* 
-    Created on : 9 janv. 2020, 12:22:16
-    Author     : lb
-*/
+body, html{
+    overflow-x: hidden;
+}
 

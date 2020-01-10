@@ -64,3 +64,6 @@ p + p:not(.foo){
     border-right: solid;
     border-right-color: darkorange;
 }
+body, html{
+    overflow-x: hidden;
+}
