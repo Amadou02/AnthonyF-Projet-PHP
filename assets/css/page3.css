@@ -1,6 +1,9 @@
 body {
     font-family: "Roboto";
 }
+p{
+  font-size: 1.5rem;
+}
 h1{
     text-align: center;
     background-color: #343A40;
